@@ -27,6 +27,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>plat</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>arduino/core</name>
 			<type>2</type>
 			<locationURI>ArduinoPlatformPath/cores/arduino</locationURI>
@@ -35,6 +40,11 @@
 			<name>arduino/variant</name>
 			<type>2</type>
 			<locationURI>ArduinoPinPath/mega</locationURI>
+		</link>
+		<link>
+			<name>plat/Timer</name>
+			<type>2</type>
+			<locationURI>arduino_blinkTimer/Timer</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>
