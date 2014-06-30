@@ -259,7 +259,7 @@ environment/project/it.baeyens.arduino.core.toolChain.release.23903704/A.UPLOAD.
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/A.UPLOAD.TOOL/value=avrdude
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARDS_FILE/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARDS_FILE/operation=replace
-environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARDS_FILE/value=C\:\\HackSessions\\Tools\\arduino-1.5.2\\hardware\\arduino\\avr\\boards.txt
+environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARDS_FILE/value=${A.RUNTIME.HARDWARE.PATH}\\arduino\\avr\\boards.txt
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARD_NAME/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARD_NAME/operation=replace
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.BOARD_NAME/value=Arduino Mega 2560 or Mega ADK
@@ -283,7 +283,7 @@ environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.KE
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.KEYBOARD\ LAYOUT/value=
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PLATFORM_FILE/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PLATFORM_FILE/operation=replace
-environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PLATFORM_FILE/value=C\:/HackSessions/Tools/arduino-1.5.2/hardware/arduino/avr/platform.txt
+environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PLATFORM_FILE/value=${A.RUNTIME.HARDWARE.PATH}/arduino/avr/platform.txt
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PROCESSOR/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PROCESSOR/operation=replace
 environment/project/it.baeyens.arduino.core.toolChain.release.23903704/JANTJE.PROCESSOR/value=
