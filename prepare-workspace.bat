@@ -8,7 +8,8 @@ set ArduinoVer=1.5.2
 
 :: Eclipse Arduino Workbench Bundle (see http://www.baeyens.it/eclipse/download.php)
 set EclipseArduinoDownloadUrl=http://www.baeyens.it/eclipse/download/product
-set EclipseArduinoVer=2014-06-30_14-49-25
+set EclipseArduinoVer=2014-07-01_13-49-13
+::set EclipseArduinoVer=2014-06-30_14-49-25
 ::set EclipseArduinoVer=2014-06-30_02-06-35
 ::set EclipseArduinoVer=2014-05-22_02-07-31
 ::set EclipseArduinoVer=2014-05-15_02-07-18
