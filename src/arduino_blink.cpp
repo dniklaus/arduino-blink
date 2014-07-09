@@ -43,13 +43,16 @@ void serialEvent()
   {
     // get the new byte:
     char inChar = (char)Serial.read();
-    if ('d' == inChar)
+    if (0 != blinkTimerControl)
     {
-      blinkTimerControl->decrementBlinkTime();
-    }
-    else if ('i' == inChar)
-    {
-      blinkTimerControl->incrementBlinkTime();
+      if ('d' == inChar)
+      {
+        blinkTimerControl->decrementBlinkTime();
+      }
+      else if ('i' == inChar)
+      {
+        blinkTimerControl->incrementBlinkTime();
+      }
     }
   }
 }
