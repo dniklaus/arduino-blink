@@ -3,8 +3,8 @@
 :: Configured Settings
 ::-----------------------------------------------------------------------------
 :: Arduino IDE (see http://arduino.cc/en/Main/OldSoftwareReleases) 
-set ArduinoDownloadUrl=http://downloads.arduino.cc
-set ArduinoVer=1.5.2
+set ArduinoDownloadUrl=http://arduino.cc/download.php?f=
+set ArduinoVer=1.5.6-r2
 
 :: Eclipse Arduino Workbench Bundle (see http://www.baeyens.it/eclipse/download.php)
 set EclipseArduinoDownloadUrl=http://www.baeyens.it/eclipse/download/product
