@@ -3,17 +3,12 @@
 :: Configured Settings
 ::-----------------------------------------------------------------------------
 :: Arduino IDE (see http://arduino.cc/en/Main/OldSoftwareReleases) 
-set ArduinoDownloadUrl=http://downloads.arduino.cc
-set ArduinoVer=1.5.2
+set ArduinoDownloadUrl=http://arduino.cc/download.php?f=
+set ArduinoVer=1.5.6-r2
 
 :: Eclipse Arduino Workbench Bundle (see http://www.baeyens.it/eclipse/download.php)
 set EclipseArduinoDownloadUrl=http://www.baeyens.it/eclipse/download/product
-set EclipseArduinoVer=2014-07-02_17-56-02
-::set EclipseArduinoVer=2014-07-01_13-49-13
-::set EclipseArduinoVer=2014-06-30_14-49-25
-::set EclipseArduinoVer=2014-06-30_02-06-35
-::set EclipseArduinoVer=2014-05-22_02-07-31
-::set EclipseArduinoVer=2014-05-15_02-07-18
+set EclipseArduinoVer=2014-12-28_02-06-00
 
 :: Expected Project Location (Eclipse CDT cannot deal with relative paths)
 set ArduinoProjects=C:\git\arduino-projects
@@ -63,6 +58,9 @@ set CurEclipseArduino=%EclipseArduinoRevs%\%OsVariant%.%EclipseArduinoVer%\eclip
 :: 7Zip
 set Archiver=%ThisProjTools%\7za920\7za.exe
 
+:: curl (unused)
+set Curl=%ThisProjTools%\curl\curl.exe
+
 :: wget
 set Wget=%ThisProjTools%\wget\wget.exe
 
@@ -94,6 +92,7 @@ if not exist "%CurArduino%" (
     md "%ArduinoRevs%"
   )
   if not exist "%ArduinoRevs%\arduino-%ArduinoVer%-windows.zip" (
+    ::%Curl% -# -o "%ArduinoRevs%\arduino-%ArduinoVer%-windows.zip" "%ArduinoDownloadUrl%/arduino-%ArduinoVer%-windows.zip"
     %Wget% --tries=0 --output-document="%ArduinoRevs%\arduino-%ArduinoVer%-windows.zip" "%ArduinoDownloadUrl%/arduino-%ArduinoVer%-windows.zip"
   )
   %Archiver% x -y -o%ArduinoRevs% %ArduinoRevs%\arduino-%ArduinoVer%-windows.zip
@@ -111,6 +110,7 @@ if not exist "%CurEclipseArduino%" (
     md "%EclipseArduinoRevs%"
   )
   if not exist "%EclipseArduinoRevs%\%OsVariant%.%EclipseArduinoVer%.tar.gz" (
+    ::%Curl% -# -o "%EclipseArduinoRevs%\%OsVariant%.%EclipseArduinoVer%.tar.gz" "%EclipseArduinoDownloadUrl%/%OsVariant%.%EclipseArduinoVer%.tar.gz"
     %Wget% --tries=0 --output-document="%EclipseArduinoRevs%\%OsVariant%.%EclipseArduinoVer%.tar.gz" "%EclipseArduinoDownloadUrl%/%OsVariant%.%EclipseArduinoVer%.tar.gz"
   )
   %Archiver% x -y -o%EclipseArduinoRevs% %EclipseArduinoRevs%\%OsVariant%.%EclipseArduinoVer%.tar.gz
