@@ -3,17 +3,12 @@
 :: Configured Settings
 ::-----------------------------------------------------------------------------
 :: Arduino IDE (see http://arduino.cc/en/Main/OldSoftwareReleases) 
-set ArduinoDownloadUrl=http://downloads.arduino.cc
-set ArduinoVer=1.5.2
+set ArduinoDownloadUrl=http://arduino.cc/download.php?f=
+set ArduinoVer=1.5.6-r2
 
 :: Eclipse Arduino Workbench Bundle (see http://www.baeyens.it/eclipse/download.php)
 set EclipseArduinoDownloadUrl=http://www.baeyens.it/eclipse/download/product
-set EclipseArduinoVer=2014-07-02_17-56-02
-::set EclipseArduinoVer=2014-07-01_13-49-13
-::set EclipseArduinoVer=2014-06-30_14-49-25
-::set EclipseArduinoVer=2014-06-30_02-06-35
-::set EclipseArduinoVer=2014-05-22_02-07-31
-::set EclipseArduinoVer=2014-05-15_02-07-18
+set EclipseArduinoVer=2014-12-28_02-06-00
 
 :: Expected Project Location (Eclipse CDT cannot deal with relative paths)
 set ArduinoProjects=C:\git\arduino-projects
