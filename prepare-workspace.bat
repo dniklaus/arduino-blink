@@ -138,6 +138,10 @@ if %errorlevel% == 0 goto end
 :: revert src/.project that have been made dirty by the failing build
 %Git% checkout -- %ProjectHome%\src\.project
 
+:: run second build
+call build.bat
+if %errorlevel% == 0 goto end
+
 :error
 msg "%username%" An error occured!
 ::pause
