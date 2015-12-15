@@ -34,7 +34,7 @@
 		<link>
 			<name>arduino/core</name>
 			<type>2</type>
-			<locationURI>ArduinoPlatformPath/cores/arduino</locationURI>
+			<locationURI>ArduinoPlatformPath/arduino</locationURI>
 		</link>
 		<link>
 			<name>arduino/variant</name>
@@ -50,15 +50,15 @@
 	<variableList>
 		<variable>
 			<name>ArduinoHardwareLibPath</name>
-			<value>$%7BArduinoPath%7D/hardware/arduino/avr/libraries</value>
+			<value>file:/C:/git/arduino-projects/arduino-blink/tools/arduino/hardware/arduino/avr/libraries</value>
 		</variable>
 		<variable>
 			<name>ArduinoPinPath</name>
-			<value>$%7BArduinoPath%7D/hardware/arduino/avr/variants</value>
+			<value>file:/C:/git/arduino-projects/arduino-blink/tools/arduino/hardware/arduino/avr/variants</value>
 		</variable>
 		<variable>
 			<name>ArduinoPlatformPath</name>
-			<value>$%7BArduinoPath%7D/hardware/arduino/avr</value>
+			<value>file:/C:/git/arduino-projects/arduino-blink/tools/arduino/hardware/arduino/avr/cores</value>
 		</variable>
 	</variableList>
 </projectDescription>
